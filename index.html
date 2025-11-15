@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Zona Urbana - Página Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Urbana</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=1374&q=80") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: 900;
+            margin-top: 60px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #ff0055;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff3366;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Bienvenido a Zona Urbana</h1>
-    <p>Esta es la página oficial.</p>
+    <div class="overlay">
+        <h1>Zona Urbana</h1>
+        <p>
+            Bienvenido a mi página con estilo callejero, vibes latinas y diseño urbano.
+            Aquí se puede poner información, fotos, música o lo que quieras mostrar.
+        </p>
+
+        <a href="#" class="btn">Entrar</a>
+    </div>
 </body>
 </html>
